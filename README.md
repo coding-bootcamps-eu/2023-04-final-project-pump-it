@@ -35,3 +35,9 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 # 2023-04-final-project-pump-it
+
+### Project-members
+
+[Rene Balzano]
+
+
