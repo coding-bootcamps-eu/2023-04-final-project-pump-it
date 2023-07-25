@@ -1,4 +1,12 @@
 <template>
+  <h1>
+    App wird gestartet!
+    <p>
+      1. Wenn kein Account besteht, wird dem nutzer eine Begrüßung
+      angezeigt!"Herzlich willkommen in deinem persönlichen Pump-it Tagebuch!"
+      bei bestehendem account <i>" Willkommen {{ name }}"</i>
+    </p>
+  </h1>
   <form @submit.prevent="saveData" v-if="hasProfile === false">
     <div>
       <label for="name">Name</label
