@@ -1,23 +1,5 @@
 <template>
-  <h1>Startbildschirm</h1>
-  <div class="app">
-    <header>
-      <button @click="openCalendar">Wochen verwalten</button>
-      <button>Training starten</button>
-    </header>
-    <h2>Statistik?</h2>
-    <!-- Kalender Popup-Fenster -->
-    <div v-if="showCalendar" class="calendar-popup">
-      <Datepicker
-        v-model="selectedDate"
-        @input="updateSelectedDate"
-        @change="confirmDate"
-      />
-    </div>
-
-    <!-- Bestätigtes Datum anzeigen -->
-    <p v-if="confirmedDate">Bestätigtes Datum: {{ confirmedDate }}</p>
-  </div>
+  <h1>hallo</h1>
 </template>
 
 <script>
