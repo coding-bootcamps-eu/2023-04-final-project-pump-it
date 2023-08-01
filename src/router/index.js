@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
-import ProfileView from "@/views/ProfileView.vue";
-import TrainingsView from "@/views/TrainingsView.vue";
-import MotivationView from "@/views/MotivationView.vue";
-import PedometerView from "@/views/PedometerView.vue";
+import NoplanActiveView from "@/views/NoplanActiveView.vue";
+import ChoseCategorieView from "@/views/ChoseCategorieView.vue";
+import CreatedPlanView from "@/views/CreatedPlanView.vue";
+import ActivePlansView from "@/views/ActivePlansView.vue";
 import WorkoutView from "@/views/WorkoutView.vue";
+import MotivationView from "@/views/MotivationView.vue";
 import AboutView from "@/views/AboutView.vue";
 
 const routes = [
@@ -14,26 +15,26 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/about",
-    name: "about",
-    component: AboutView,
+    path: "/noplanactive",
+    name: "noplanactive",
+    component: NoplanActiveView,
   },
   {
-    path: "/profile",
-    name: "profile",
-    component: ProfileView,
-  },
-
-  {
-    path: "/pedometer",
-    name: "pedometer",
-    component: PedometerView,
+    path: "/chosecategorie",
+    name: "chosecategorie",
+    component: ChoseCategorieView,
   },
 
   {
-    path: "/training",
-    name: "training",
-    component: TrainingsView,
+    path: "/createdplan",
+    name: "createdplan",
+    component: CreatedPlanView,
+  },
+
+  {
+    path: "/activeplans",
+    name: "activeplans",
+    component: ActivePlansView,
   },
 
   {
@@ -43,9 +44,15 @@ const routes = [
   },
 
   {
-    path: "/motivation",
-    name: "motivation",
+    path: "/motivationsite",
+    name: "motivationsite",
     component: MotivationView,
+  },
+
+  {
+    path: "/about",
+    name: "about",
+    component: AboutView,
   },
 ];
 
